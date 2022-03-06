@@ -1,0 +1,22 @@
+{
+  "extends": ["stylelint-config-standard", "stylelint-config-styled-components"],
+  "rules": {
+    "string-quotes": "single",
+    "font-family-name-quotes": "always-unless-keyword",
+    "declaration-colon-newline-after": null,
+    "value-keyword-case": [
+      "lower",
+      {
+        "ignoreKeywords": ["dummyValue"]
+      }
+    ]
+  },
+  "processors": [
+    [
+      "stylelint-processor-styled-components",
+      {
+        "ignoreFiles": ["**/*.css", "**/*.scss"]
+      }
+    ]
+  ]
+}
